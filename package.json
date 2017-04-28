@@ -9,7 +9,7 @@
     "url": "git://github.com/LeWood16/fcc-timestamp-microservice"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
