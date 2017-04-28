@@ -15,9 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
-    "moment": "^2.18.1",
-  }, "engines" : { 
+    "moment": "^2.18.1"
+  },
+  "engines" : { 
     "node" : "^4.3.1",
-    "npm" : "^2.14.12"
+    "npm" : "^4.5.0"
   }
 }
