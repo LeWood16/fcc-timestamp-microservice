@@ -13,7 +13,6 @@ app.get('/:string', function(req, res) {
   res.setHeader('Content-Type', 'application/json');
   
   var str = req.params.string;
-  var m = moment(str);
   var date = moment(str, [
     "MM DD, YYYY",
     "MM-DD-YYYY", 
@@ -28,14 +27,13 @@ app.get('/:string', function(req, res) {
   var unix = date.format("X"); 
   
   // if a parseable date object, return both properties
-  if (m.isValid()){
+  if (date.isValid()){
     res.send(JSON.stringify({"unix":unix, "natural": natural}));
   }
   
   res.send(JSON.stringify({"unix":null,"natural":null}));
   
 });
-
 
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
