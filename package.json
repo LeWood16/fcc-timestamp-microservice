@@ -1,0 +1,21 @@
+{
+  "name": "timestamp_microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "~0.2.8",
+    "date": "^1.0.2",
+    "express": ">4.0.0",
+    "moment": "^2.18.1",
+    "mongodb": ">3.0.0",
+    "path": "^0.12.7",
+    "socket.io": "~0.9.14"
+  },
+  "devDependencies": {}
+}
